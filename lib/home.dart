@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gp/profile.dart';
 import 'package:gp/lectures.dart';
 import 'add_lecture.dart';
 
@@ -69,7 +68,6 @@ class _MyHomePageState extends State<home> {
                         padding: const EdgeInsets.all(8.0),
                         child: TextButton.icon(
                             onPressed: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>profile()));
                             },
                             icon: Icon(
                               Icons.person,

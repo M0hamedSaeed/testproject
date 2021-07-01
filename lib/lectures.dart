@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gp/profile.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 import 'home.dart';
@@ -54,10 +53,6 @@ class _lecturesState extends State<lectures> {
                     padding: const EdgeInsets.all(8.0),
                     child: TextButton.icon(
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => profile()));
                         },
                         icon: Icon(
                           Icons.person,
