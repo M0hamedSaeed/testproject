@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gp/profile.dart';
 import 'package:gp/lectures.dart';
+import 'QR Generator/QRGenerator.dart';
 import 'add_lecture.dart';
 
 void main() {
@@ -126,11 +127,14 @@ class _MyHomePageState extends State<MyHomePage> {
               ElevatedButton(
                   style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(Colors.white24),
+                      MaterialStateProperty.all(Colors.white24),
                       padding: MaterialStateProperty.all(
                         EdgeInsets.all(30),
                       )),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => QRGenerator()));
+                  },
                   child: Text(
                     "Create QR Code",
                     style: TextStyle(color: Colors.black),
