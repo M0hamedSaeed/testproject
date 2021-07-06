@@ -1,8 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:qr_flutter/qr_flutter.dart';
+import 'dart:io';
 
+import 'package:flutter/material.dart';
+//import 'package:syncfusion_flutter_xlsio/xlsio.dart';
 import 'home.dart';
 import 'add_lecture.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:open_file/open_file.dart';
 
 class lectures extends StatefulWidget {
   @override
@@ -104,6 +107,7 @@ class _lecturesState extends State<lectures> {
         ),
         Expanded(child: FutureBuilder(
             //      future:
+
             builder: (context, snapshot) {
           return Container(
               color: Colors.grey,

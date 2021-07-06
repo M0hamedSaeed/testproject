@@ -1,9 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:gp/home.dart';
-import 'package:qr_flutter/qr_flutter.dart';
 
 
-void main() {
+
+void main() async{ 
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
   runApp(MaterialApp(home: home()));
 }
 // ignore: camel_case_types

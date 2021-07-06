@@ -1,19 +1,11 @@
 import 'package:flutter/material.dart';
-
 import 'GeneratedQR.dart';
-
 class QRGenerator extends StatefulWidget {
-
-
   @override
   _QRGeneratorState createState() => _QRGeneratorState();
 }
-
 TextEditingController mycontroller = new TextEditingController();
-
 class _QRGeneratorState extends State<QRGenerator> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
